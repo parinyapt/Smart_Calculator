@@ -32,7 +32,7 @@ app.use(function(err, req, res, next) {
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
   // render the error page
-  res.render('index', { title: 'Error | Your input is not Eqaution' ,outputre: 'N/A' });
+  res.render('index', { math_expression: 'Error | Your input is not Mathematical expression' ,result: 'Error | Your input is not Mathematical expression' });
 });
 
 module.exports = app;

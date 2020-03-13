@@ -9,17 +9,17 @@
 <body>
   <form action="/" method="post">
     <fieldset>
-      <label for="equation">Equation :</label>
-      <input type="text" id="equation" name="equation" placeholder="your Equation" />
+      <label>Mathematical expression :</label>
+      <input type="text" name="math_expression" placeholder="Input your Mathematical Expression" />
 
       <input type="submit" value="Calculate" />
 
     </fieldset>
   </form>
-  <p>Equation is</p>
-  <h1><%= title %></h1>
+  <p>Mathematical Expression is</p>
+  <h1><%= math_expression %></h1>
   <p>Result is</p>
-  <h1><%= outputre %></h1>
+  <h1><%= result %></h1>
 
 </body>
 

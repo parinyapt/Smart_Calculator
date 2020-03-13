@@ -9,17 +9,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'N/A' ,outputre: 'N/A' });
 });
 
-/*router.get('/:equation', function(req, res, next) {
-  var equation = String(req.params.equation)
-  var reout = "Not found result output"
-  if(equation==0){
-  
-  }
-  else{
-    reout = eval(equation)
-  }
-  res.render('index', { title: equation , resultoutput: reout });
-});*/
 router.post('/', function(req, res, next) {
   var equation = "" 
   equation = req.body.equation
